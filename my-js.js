@@ -9,7 +9,7 @@ let defaultColour= "#000000"
 //Create 256(16 x 16) Div and Add Style to it.
 for(let i=1;i<=16;i++){
     for(let j=1;j<=16;j++){
-        let div=document.createElement('div');
+        let div=document.createElement('div');          
         div.className='box';
         div.setAttribute('style','border:1px solid black')
         containers.appendChild(div);
@@ -47,7 +47,7 @@ document.body.insertBefore(ndiv,containers);
 let button=document.createElement('button');
 button.id='btnGrid';
 button.textContent='Change GRID layout';
-button.setAttribute('style','width:50px;height:50px;background-color:#ad9650;')
+button.setAttribute('style','background-color:#ad9650;')
 button.addEventListener('click',gridselect);
 // document.body.insertBefore(button,containers);
 ndiv.appendChild(button)
